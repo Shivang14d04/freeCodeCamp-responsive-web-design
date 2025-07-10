@@ -58,3 +58,13 @@ Here is an example of nesting and indentation:
   <p>Some more important content...</p>
 </main>
 ```
+
+# Step 7
+
+The target attribute specifies where to open the linked document when using an <a>, <form>, or other link-like elements.
+
+```html
+<a href="https://example.com" target="_blank">Visit Example</a>
+```
+
+\_blank Opens in a new tab or window.

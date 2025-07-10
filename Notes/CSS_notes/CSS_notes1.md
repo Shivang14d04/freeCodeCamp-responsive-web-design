@@ -94,3 +94,128 @@ You can use the id selector to target a specific element with an id attribute. A
   width: 250px;
 }
 ```
+
+# Step 8
+
+px is a fixed unit → doesn't adapt to screen size.
+
+% is relative to the parent → more responsive.
+
+Makes layout adjust better on different devices or window sizes.
+for example
+
+```css
+#menu {
+  width: 80%; /* Relative to the parent element's width */
+  text-align: center;
+}
+```
+
+# Step 9
+
+Next, You can center the item horizontally by setting its margin-left and margin-right properties to auto. Think of the margin as an invisible space around an element. Using these two margin properties, center the #menu element within the body element.
+
+```css
+#menu {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+}
+```
+
+# Step 10
+
+you could use an image of your own choice as the page background.
+
+to do so ,add a background-image property and set its value to url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg) (image path).
+
+article elements commonly contain multiple elements that have related information. I
+
+# Step 11
+
+p elements are block-level elements, so they take up the entire width of their parent element.
+
+To get them on the same line, you need to apply some styling to the p elements so they behave more like inline elements.you can do this by display property and set it to inline-block.
+inline-block elements only take up as much horizontal space as their content requires — no more, no less.
+By default, an inline-block element:
+
+Does not stretch to fill the container.
+
+Only occupies the space needed by its content.
+
+You can manually set the width if needed.
+
+# Step 12
+
+The max-width property sets the maximum width an element can grow to, regardless of the content size or screen width.
+Prevents elements from becoming too wide on large screens
+
+Helps create responsive layouts
+
+Often used with width: 100% to allow flexibility within limits.
+
+# Step 13
+
+You can add a fallback value for the font-family by adding another font name separated by a comma. Fallbacks are used in instances where the initial is not found/available.
+example
+
+```css
+h1,
+h2 {
+  font-family: Impact, serif;
+}
+```
+
+# Step 14
+
+The typography of heading elements (e.g. h1, h2) is set by default values of users' browsers.
+you can change it bu using font-size property.
+
+```css
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 30px;
+}
+```
+
+# Step 15
+
+The default color of a link that has not yet been clicked on is typically blue. The default color of a link that has already been visited from a page is typically purple.
+
+```css
+a {
+  color: black;
+}
+```
+
+You change the properties of a link when the link has actually been visited by using a pseudo-selector that looks like a:visited { propertyName: propertyValue; }.
+
+```css
+a:visited {
+  color: grey;
+}
+```
+
+You change the properties of a link when the mouse hovers over them by using a pseudo-selector that looks like a:hover { propertyName: propertyValue; }.
+
+You change the properties of a link when the link is actually being clicked by using a pseudo-selector that looks like a:active { propertyName: propertyValue; }.
+
+# Step 16
+
+Browsers apply default margin and padding to certain HTML elements like <h1>, <p>, and <ul>.
+This can create unwanted spacing in your layout, especially at the top and bottom of elements.
+For consistent layout control
+use margin:0;
+
+# Step 17
+
+Sometimes elements (like <h2> and <img>) have too much vertical space between them due to default margins applied by the browser.
+Common Solutions:
+Option 1: Adjust Element Margins Directly
+Reduce or remove the bottom margin of the text element (e.g., <h2>)
+
+Option 2: Use Negative Top Margin on the Next Element
+Pull the next element (like an image) upward by applying a negative margin-top:
