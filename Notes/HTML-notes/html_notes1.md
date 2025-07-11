@@ -68,3 +68,13 @@ The target attribute specifies where to open the linked document when using an <
 ```
 
 \_blank Opens in a new tab or window.
+
+# Step 8
+
+The charset attribute specifies the character encoding used by the document. utf-8 (Unicode Transformation Format – 8-bit) is a character encoding standard used for electronic communication.
+
+# Step 9
+
+You can have multiple meta elements on a web page. Each meta element adds information about the page that cannot be expressed by other HTML elements.
+
+set name attribute to "viewport" and a content attribute set to "width=device-width, initial-scale=1.0" so the page looks the same on all devices.
