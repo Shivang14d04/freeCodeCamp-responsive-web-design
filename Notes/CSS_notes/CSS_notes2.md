@@ -273,3 +273,9 @@ box-shadow: offsetX offsetY blurRadius spreadRadius color;
 ```
 
 Like blurRadius, spreadRadius defaults to 0 if it isn't included.
+
+# 14
+
+The vh unit stands for viewport height, and is equal to 1% of the height of the viewport. This makes it relative to the viewport height.
+
+The rem unit stands for root em, and is relative to the font size of the html element.
