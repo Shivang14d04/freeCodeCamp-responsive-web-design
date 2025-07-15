@@ -279,3 +279,44 @@ Like blurRadius, spreadRadius defaults to 0 if it isn't included.
 The vh unit stands for viewport height, and is equal to 1% of the height of the viewport. This makes it relative to the viewport height.
 
 The rem unit stands for root em, and is relative to the font size of the html element.
+
+# 15
+
+You can select the last element of a specific type using the last-of-type CSS pseudo-class, like this:
+
+Example Code
+
+```css
+p:last-of-type {
+}
+```
+
+That will select the last p element.
+
+```css
+fieldset:last-of-type {
+  border-bottom: none;
+}
+```
+
+# 16
+
+To override a general rule like input { width: 100%; }, you can target a more specific class (e.g., .inline) and use width: unset;. This resets the width to its default value.
+
+Example:
+
+```css
+.inline {
+  width: unset;
+}
+```
+
+# 17
+
+Browsers apply default styles to HTML elements, which can vary slightly across browsers. For example, text input fields usually have default padding like 1px 2px, but file input fields may appear smaller because they don’t receive the same styling. To ensure consistency, it's common to reset or override these default styles using CSS.
+
+```css
+input[type="file"] {
+  padding: 1px 2px;
+}
+```

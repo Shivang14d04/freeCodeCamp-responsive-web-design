@@ -159,3 +159,18 @@ Each <option> in a <select> should have a value attribute to define what is sent
 Without value, the visible text is submitted.
 
 Use value="" for the first option (e.g., a placeholder).
+
+# 9
+
+The <textarea> element allows users to enter multi-line text, unlike the single-line <input type="text">. It requires a closing tag and can be customized with rows and cols attributes. Wrapping it inside a <label> ensures accessibility and connects the label text with the input field.
+
+# 10
+
+To give the textareas an initial size, you can add the rows and cols attributes.
+
+```html
+<label for="bio"
+  >Provide a bio:
+  <textarea rows="3" cols="30" id="bio"></textarea>
+</label>
+```
