@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel = "stylesheet" href="./styles.css">
+
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <p id="description">This is a survey form</p>
+    <form id="survey-form">
+        <fieldset>
+        <label for="name">Name<input placeholder="Enter your name" id="name" type="text" ></label>
+        <label for="email">Email<input placeholder=" Enter your email" id="email" type="text" ></label>
+           
+        <label for="age">Age<input placeholder="Enter your age" id="age" type="number"></label>
+        <label>Which option best describe your current role
+            <select>
+                <option>Student</option>
+                <option>Full time job</option>
+                <option>Part time learner</option>
+                <option>Others</option>
+            </select>
+        </label>
+        </fieldset>
+        <fieldset>
+            <legend>What's your niche</legend>
+            <label><input type="radio">Web Development</label>
+            <label><input type="radio">Blockchain or Web3</label>
+            <label><input type="radio">Data Science</label>
+            <label><input type="radio">AI ML </label>
+        </fieldset>
+        <fieldset>
+            <label>What is your favourite anime
+                <select>
+                    <option value="">Select One</option>
+                    <option value="1">Jujutsu Kaisen</option>
+                    <option value="2">Vinland Saga </option>
+                    <option value="3">Attack on titan </option>
+                    <option value="4">Death Note</option>
+                    <option value="5">Devil may cry</option>
+                    <option value="6">other</option>
+                </select>
+            </label>
+
+        </fieldset>
+        <fieldset>
+            <label>Any comments or suggetions<textarea rows="3" cols="30"></textarea></label>
+            
+        </fieldset>
+
+
+    </form>
+    
+</body>
+</html>
